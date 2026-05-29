@@ -80,17 +80,17 @@ export default function ServicesCards() {
           </div>
         </AnimationWrapper>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3 items-stretch">
           {services.map((service, index) => (
-            <AnimationWrapper key={service.id} delay={0.1 * index}>
+            <AnimationWrapper key={service.id} delay={0.1 * index} className="h-full">
               <motion.div
                 layout
-                className="bg-white rounded-xl shadow-md overflow-hidden h-fit"
+                className="flex h-full flex-col overflow-hidden rounded-xl bg-white shadow-md"
                 whileHover={{ y: -5 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
               >
                 {/* Header de la tarjeta */}
-                <div className={`bg-gradient-to-br ${service.bgGradient} p-6 relative overflow-hidden`}>
+                <div className={`relative flex-1 overflow-hidden bg-gradient-to-br ${service.bgGradient} p-6`}>
                   <motion.div
                     initial={{ rotate: -5, scale: 0.9 }}
                     whileHover={{ rotate: 0, scale: 1.1 }}
@@ -99,8 +99,8 @@ export default function ServicesCards() {
                   >
                     {service.icon}
                   </motion.div>
-                  <h3 className="text-lg font-bold text-gray-800 mb-2">{service.title}</h3>
-                  <p className="text-gray-700 text-sm">{service.shortDescription}</p>
+                  <h3 className="mb-2 min-h-[3.5rem] text-lg font-bold text-gray-800">{service.title}</h3>
+                  <p className="min-h-[4.5rem] text-sm text-gray-700">{service.shortDescription}</p>
 
                   {/* Círculos decorativos */}
                   <div className="absolute -right-8 -top-8 w-24 h-24 rounded-full bg-white/10"></div>

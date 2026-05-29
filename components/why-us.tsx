@@ -43,27 +43,31 @@ export default function WhyUs() {
           </div>
         </AnimationWrapper>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 items-stretch">
           {benefits.map((benefit, index) => (
-            <AnimationWrapper key={index} delay={0.1 * index} once={true}>
+            <AnimationWrapper key={index} delay={0.1 * index} once={true} className="h-full [&>div]:h-full">
               <motion.div
                 whileHover={{
                   y: -10,
                   boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
                 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                className="bg-white p-6 rounded-lg shadow-md transition-all duration-300 h-full"
+                className="flex h-full flex-col rounded-lg border border-green-100 bg-white p-6 text-center shadow-md transition-all duration-300"
               >
                 <motion.div
                   initial={{ rotate: -5, scale: 0.9 }}
                   whileHover={{ rotate: 0, scale: 1.1 }}
                   transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                  className="mb-4"
+                  className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-green-50"
                 >
                   {benefit.icon}
                 </motion.div>
-                <h3 className="text-xl font-bold mb-2">{benefit.title}</h3>
-                <p className="text-gray-600">{benefit.description}</p>
+                <div className="flex flex-1 flex-col">
+                  <h3 className="mb-3 flex min-h-[3.5rem] items-center justify-center text-xl font-bold leading-snug">
+                    {benefit.title}
+                  </h3>
+                  <p className="mt-auto text-gray-600">{benefit.description}</p>
+                </div>
               </motion.div>
             </AnimationWrapper>
           ))}

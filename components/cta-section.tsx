@@ -68,7 +68,7 @@ export default function CTASection() {
   return (
     <section className="py-16 md:py-24 bg-green-600">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-8 items-center">
+        <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-8 lg:gap-12 items-center max-w-6xl mx-auto">
           <AnimationWrapper direction="left">
             <div className="space-y-4">
               <motion.h2

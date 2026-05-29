@@ -137,11 +137,11 @@ export default function Hero() {
           </AnimationWrapper>
 
           <AnimationWrapper direction="right" delay={0.3}>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <motion.div
                 whileHover={{ scale: 1.05, y: -5 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                className="rounded-xl border border-white/20 bg-white/10 p-6 backdrop-blur-md shadow-xl"
+                className="rounded-xl border border-white/20 bg-white/10 p-6 backdrop-blur-md shadow-xl h-full min-h-[170px]"
                 style={{
                   boxShadow: "0 10px 30px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.1)",
                 }}
@@ -165,7 +165,7 @@ export default function Hero() {
               <motion.div
                 whileHover={{ scale: 1.05, y: -5 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                className="rounded-xl border border-white/20 bg-white/10 p-6 backdrop-blur-md shadow-xl"
+                className="rounded-xl border border-white/20 bg-white/10 p-6 backdrop-blur-md shadow-xl h-full min-h-[170px]"
                 style={{
                   boxShadow: "0 10px 30px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.1)",
                 }}
@@ -189,7 +189,7 @@ export default function Hero() {
               <motion.div
                 whileHover={{ scale: 1.05, y: -5 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                className="rounded-xl border border-white/20 bg-white/10 p-6 backdrop-blur-md shadow-xl"
+                className="rounded-xl border border-white/20 bg-white/10 p-6 backdrop-blur-md shadow-xl h-full min-h-[170px]"
                 style={{
                   boxShadow: "0 10px 30px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.1)",
                 }}
@@ -213,7 +213,7 @@ export default function Hero() {
               <motion.div
                 whileHover={{ scale: 1.05, y: -5 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                className="rounded-xl border border-white/20 bg-white/10 p-6 backdrop-blur-md shadow-xl"
+                className="rounded-xl border border-white/20 bg-white/10 p-6 backdrop-blur-md shadow-xl h-full min-h-[170px]"
                 style={{
                   boxShadow: "0 10px 30px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.1)",
                 }}

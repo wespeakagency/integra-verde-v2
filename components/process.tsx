@@ -55,10 +55,10 @@ export default function Process() {
             whileInView={{ scaleX: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
             viewport={{ once: true }}
-            className="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-green-200 -translate-y-1/2 z-0 origin-left"
+            className="hidden lg:block absolute top-1/2 left-0 w-full h-0.5 bg-green-200 -translate-y-1/2 z-0 origin-left"
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-8 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 relative z-10">
             {steps.map((step, index) => (
               <AnimationWrapper key={index} delay={0.2 * index}>
                 <motion.div
