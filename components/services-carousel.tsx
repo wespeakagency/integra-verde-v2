@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useRef, useEffect } from "react"
-import { Sun, Battery, Car, Home, ArrowLeft, ArrowRight, Check, Plus } from "lucide-react"
+import { Sun, Battery, Home, ArrowLeft, ArrowRight, Check, Plus } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import AnimationWrapper from "./animation-wrapper"
 
@@ -76,21 +76,6 @@ export default function ServicesCarousel() {
       idealFor: ["Protección ante apagones", "Equipos médicos", "Servidores y equipos críticos"],
       color: "from-purple-50 to-purple-100",
       bgGradient: "from-purple-600/20 via-purple-500/10 to-transparent",
-    },
-    {
-      icon: <Car className="h-12 w-12 text-teal-600" />,
-      title: "Cargadores para Vehículos Eléctricos",
-      description:
-        "Carga tu vehículo eléctrico en casa con energía solar. Instalación profesional y compatible con todas las marcas.",
-      includes: [
-        "Cargadores nivel 2 rápidos",
-        "Instalación certificada",
-        "Compatible con todas las marcas",
-        "Garantía extendida",
-      ],
-      idealFor: ["Propietarios de vehículos eléctricos", "Flotillas comerciales", "Estacionamientos públicos"],
-      color: "from-teal-50 to-teal-100",
-      bgGradient: "from-teal-600/20 via-teal-500/10 to-transparent",
     },
   ]
 

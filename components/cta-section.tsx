@@ -16,7 +16,6 @@ export default function CTASection() {
     "Sistemas Híbridos",
     "Sistemas Aislados (Off-grid)",
     "Baterías de Respaldo",
-    "Cargadores para Vehículos Eléctricos",
   ]
 
   const handleServiceToggle = (service: string) => {

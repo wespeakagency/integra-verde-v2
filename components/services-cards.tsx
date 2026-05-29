@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Sun, Battery, Home, Car, Plus, Minus, Check } from "lucide-react"
+import { Sun, Battery, Home, Plus, Minus, Check } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import AnimationWrapper from "./animation-wrapper"
 
@@ -57,17 +57,6 @@ export default function ServicesCards() {
       color: "text-amber-600",
       bgGradient: "from-amber-50 to-amber-100",
     },
-    {
-      id: "cargadores-ev",
-      icon: <Car className="h-8 w-8 text-teal-600" />,
-      title: "Cargadores para Vehículos Eléctricos",
-      shortDescription: "Carga rápida de tu vehículo eléctrico en casa.",
-      fullDescription: "Instalación profesional y compatible con todas las marcas de vehículos eléctricos.",
-      includes: ["Cargadores nivel 2 rápidos", "Garantía extendida"],
-      idealFor: ["Propietarios de vehículos eléctricos", "Flotillas comerciales"],
-      color: "text-teal-600",
-      bgGradient: "from-teal-50 to-teal-100",
-    },
   ]
 
   const toggleCard = (cardId: string) => {
@@ -91,7 +80,7 @@ export default function ServicesCards() {
           </div>
         </AnimationWrapper>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <AnimationWrapper key={service.id} delay={0.1 * index}>
               <motion.div

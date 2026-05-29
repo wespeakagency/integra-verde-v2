@@ -1,6 +1,6 @@
 "use client"
 
-import { Sun, Battery, Zap, Car, Home } from "lucide-react"
+import { Sun, Battery, Zap, Home } from "lucide-react"
 import { motion } from "framer-motion"
 import AnimationWrapper from "./animation-wrapper"
 
@@ -124,31 +124,6 @@ export default function Services() {
           </AnimationWrapper>
 
           <AnimationWrapper delay={0.5}>
-            <motion.div
-              whileHover={{ y: -10 }}
-              transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              className="bg-white rounded-lg shadow-md overflow-hidden h-full"
-            >
-              <div className="p-6">
-                <div className="flex items-center mb-4">
-                  <Car className="h-8 w-8 text-green-600 mr-3" />
-                  <h3 className="text-xl font-bold">Cargadores para Vehículos Eléctricos</h3>
-                </div>
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="font-semibold text-gray-700">Qué incluye:</h4>
-                    <p className="text-gray-600">Cargadores nivel 2 y rápidos, instalación</p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-700">Ideal para:</h4>
-                    <p className="text-gray-600">Usuarios de EV y flotillas</p>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-          </AnimationWrapper>
-
-          <AnimationWrapper delay={0.6}>
             <motion.div
               whileHover={{ y: -10 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}

@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { ArrowRight, Sun, Zap, Battery, Car } from "lucide-react"
+import { ArrowRight, Sun, Zap, Battery, Home } from "lucide-react"
 import { motion } from "framer-motion"
 import AnimationWrapper from "./animation-wrapper"
 import { useEffect, useState } from "react"
@@ -73,7 +73,7 @@ export default function VideoHero() {
                 transition={{ duration: 0.5, delay: 0.4 }}
                 className="max-w-[600px] text-white/90 md:text-xl"
               >
-                Paneles solares, baterías de respaldo y cargadores de vehículos eléctricos instalados por expertos
+                Paneles solares, sistemas híbridos, baterías de respaldo y sistemas aislados instalados por expertos
                 certificados.
               </motion.p>
 
@@ -137,9 +137,9 @@ export default function VideoHero() {
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 className="rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm"
               >
-                <Car className="h-10 w-10 text-green-400 mb-4" />
-                <h3 className="text-lg font-semibold text-white mb-2">Cargadores EV</h3>
-                <p className="text-white/80 text-sm">Carga tu vehículo eléctrico con energía solar</p>
+                <Home className="h-10 w-10 text-green-400 mb-4" />
+                <h3 className="text-lg font-semibold text-white mb-2">Sistemas Aislados</h3>
+                <p className="text-white/80 text-sm">Energía independiente donde no llega la red</p>
               </motion.div>
 
               <motion.div
