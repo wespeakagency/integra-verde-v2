@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { ArrowRight, Sun, Zap, Battery, Car } from "lucide-react"
+import { ArrowRight, Sun, Zap, Battery } from "lucide-react"
 import { motion } from "framer-motion"
 import AnimationWrapper from "./animation-wrapper"
 import { useEffect, useState, useRef } from "react"
@@ -189,31 +189,7 @@ export default function Hero() {
               <motion.div
                 whileHover={{ scale: 1.05, y: -5 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                className="rounded-xl border border-white/20 bg-white/10 p-6 backdrop-blur-md shadow-xl h-full min-h-[170px]"
-                style={{
-                  boxShadow: "0 10px 30px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.1)",
-                }}
-              >
-                <motion.div
-                  animate={{
-                    x: [0, 5, 0, -5, 0],
-                  }}
-                  transition={{
-                    duration: 5,
-                    repeat: Number.POSITIVE_INFINITY,
-                    ease: "easeInOut",
-                  }}
-                >
-                  <Car className="h-10 w-10 text-blue-400 mb-4" />
-                </motion.div>
-                <h3 className="text-lg font-semibold text-white mb-2">Cargadores EV</h3>
-                <p className="text-white/80 text-sm">Carga tu vehículo eléctrico en casa</p>
-              </motion.div>
-
-              <motion.div
-                whileHover={{ scale: 1.05, y: -5 }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                className="rounded-xl border border-white/20 bg-white/10 p-6 backdrop-blur-md shadow-xl h-full min-h-[170px]"
+                className="rounded-xl border border-white/20 bg-white/10 p-6 backdrop-blur-md shadow-xl h-full min-h-[170px] sm:col-span-2"
                 style={{
                   boxShadow: "0 10px 30px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.1)",
                 }}
