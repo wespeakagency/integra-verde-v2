@@ -12,22 +12,13 @@ declare global {
 
 const SUNWISE_WIDGET_SCRIPT_ID = "sunwise-widget-script"
 const SUNWISE_WIDGET_SRC = "https://widget.sunwise.mx/bundle.min.js"
-const SUNWISE_WIDGET_API_KEY = process.env.NEXT_PUBLIC_SUNWISE_WIDGET_API_KEY
+const SUNWISE_WIDGET_API_KEY = "fpYvbn6KUdnw1x7eIbB7DevBscge6jmNzT-5XrSjO9Qtwd8"
 
 export default function SunwiseWidget() {
   const mountRef = useRef<HTMLDivElement>(null)
   const [hasError, setHasError] = useState(false)
 
   useEffect(() => {
-    if (!SUNWISE_WIDGET_API_KEY) {
-      console.error(
-        "Falta configurar NEXT_PUBLIC_SUNWISE_WIDGET_API_KEY para inicializar el widget de Sunwise.",
-      )
-      setHasError(true)
-
-      return
-    }
-
     const mountNode = mountRef.current
 
     if (!mountNode) {
