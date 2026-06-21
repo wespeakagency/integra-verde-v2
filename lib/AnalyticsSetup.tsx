@@ -16,7 +16,7 @@ export default function AnalyticsSetup() {
   // Solo un recordatorio de que se debe configurar el ID.
   useEffect(() => {
     if (GA_MEASUREMENT_ID === "G-7WB3THZ7ED") {
-      console.warn("ADVERTENCIA GA4: Reemplaza ID GA4.")
+    
     }
     // En una aplicación real de Next.js, aquí se incluiría lógica adicional
     // para el seguimiento de rutas (path changes) si no se usa el componente Script oficial.
