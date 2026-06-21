@@ -84,7 +84,7 @@ export default function SunwiseWidget() {
 
   return (
     <div className="w-full">
-      <div id="root" ref={mountRef} className="min-h-[720px] w-full" />
+      <div id="root" ref={mountRef} data-ttq-form-scope="sunwise_widget" className="min-h-[720px] w-full" />
 
       {hasError ? (
         <div className="border-t border-gray-200 bg-white px-6 py-5 text-sm text-gray-600">
@@ -97,6 +97,10 @@ export default function SunwiseWidget() {
             href="https://wa.me/5215526555508"
             target="_blank"
             rel="noopener noreferrer"
+            data-ttq-event="Contact"
+            data-ttq-label="whatsapp"
+            data-ttq-content="sunwise_fallback_whatsapp"
+            data-ttq-placement="sunwise_widget_fallback"
             className="font-medium text-green-700 underline"
           >
             WhatsApp

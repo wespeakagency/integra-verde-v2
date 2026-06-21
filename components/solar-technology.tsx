@@ -180,6 +180,10 @@ export default function SolarTechnology() {
                       <Link
                         href="#contacto"
                         onClick={() => scrollToSection("contacto")}
+                        data-ttq-event="ClickButton"
+                        data-ttq-label="cotiza_gratis"
+                        data-ttq-content="solar_technology_contacto"
+                        data-ttq-placement="solar_technology"
                         className="inline-flex h-12 items-center justify-center rounded-md bg-green-600 px-8 py-3 text-base font-medium text-white transition-colors hover:bg-green-700 focus:outline-none shadow-lg w-full max-w-xs mx-auto"
                       >
                         Cotiza gratis

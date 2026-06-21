@@ -116,7 +116,14 @@ export default function Footer() {
                     </Link>
                   </motion.li>
                   <motion.li whileHover={{ x: 5 }} className="flex items-start">
-                    <Link href="https://wa.me/525526555508" className="flex items-start text-gray-300 hover:text-white transition-colors duration-200">
+                    <Link
+                      href="https://wa.me/525526555508"
+                      data-ttq-event="Contact"
+                      data-ttq-label="whatsapp"
+                      data-ttq-content="footer_cdmx_whatsapp"
+                      data-ttq-placement="footer_cdmx"
+                      className="flex items-start text-gray-300 hover:text-white transition-colors duration-200"
+                    >
                       <FaWhatsapp className="h-5 w-5 mr-2 mt-0.5 text-green-500" />
                       <span>Whats: (55) 2655-5508</span>
                     </Link>
@@ -147,7 +154,14 @@ export default function Footer() {
                     </Link>
                   </motion.li>
                   <motion.li whileHover={{ x: 5 }} className="flex items-start">
-                    <Link href="https://wa.me/529983028899" className="flex items-start text-gray-300 hover:text-white transition-colors duration-200">
+                    <Link
+                      href="https://wa.me/529983028899"
+                      data-ttq-event="Contact"
+                      data-ttq-label="whatsapp"
+                      data-ttq-content="footer_cancun_whatsapp"
+                      data-ttq-placement="footer_cancun"
+                      className="flex items-start text-gray-300 hover:text-white transition-colors duration-200"
+                    >
                       <FaWhatsapp className="h-5 w-5 mr-2 mt-0.5 text-green-500" />
                       <span>Whats: (998) 302 8899</span>
                     </Link>

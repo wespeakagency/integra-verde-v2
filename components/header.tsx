@@ -123,6 +123,10 @@ export default function Header() {
                 href="https://wa.me/5215526555508"
                 target="_blank"
                 rel="noopener noreferrer"
+                data-ttq-event="Contact"
+                data-ttq-label="whatsapp"
+                data-ttq-content="header_whatsapp"
+                data-ttq-placement="header_desktop"
                 className="inline-flex h-10 items-center justify-center rounded-md bg-green-600 px-4 py-2 text-sm font-medium text-white transition-all duration-200 hover:bg-green-700 hover:shadow-lg focus:outline-none"
               >
                 <svg
@@ -186,6 +190,10 @@ export default function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsMenuOpen(false)}
+                data-ttq-event="Contact"
+                data-ttq-label="whatsapp"
+                data-ttq-content="header_whatsapp"
+                data-ttq-placement="header_mobile"
                 className="inline-flex h-10 items-center justify-center rounded-md bg-green-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-green-700 focus:outline-none"
               >
                 <svg

@@ -116,6 +116,10 @@ export default function Hero() {
                   <Link
                     href="#contacto"
                     onClick={() => scrollToSection("contacto")}
+                    data-ttq-event="ClickButton"
+                    data-ttq-label="cotiza_gratis"
+                    data-ttq-content="hero_contacto"
+                    data-ttq-placement="hero"
                     className="inline-flex h-12 w-full sm:w-auto items-center justify-center rounded-md bg-green-600 px-6 py-3 text-base font-medium text-white transition-colors hover:bg-green-700 focus:outline-none"
                   >
                     Cotiza gratis
@@ -127,6 +131,10 @@ export default function Hero() {
                     href="https://wa.me/5215526555508"
                     target="_blank"
                     rel="noopener noreferrer"
+                    data-ttq-event="Contact"
+                    data-ttq-label="whatsapp"
+                    data-ttq-content="agenda_una_llamada"
+                    data-ttq-placement="hero"
                     className="inline-flex h-12 w-full sm:w-auto items-center justify-center rounded-md border border-white bg-transparent px-6 py-3 text-base font-medium text-white transition-colors hover:bg-white/10 focus:outline-none"
                   >
                     Agenda una llamada
