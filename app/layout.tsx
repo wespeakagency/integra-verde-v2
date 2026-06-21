@@ -1,10 +1,13 @@
 import type React from "react"
+import { Suspense } from "react"
 import type { Metadata } from "next"
 import { Inter, Montserrat } from "next/font/google"
 import "./globals.css"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
-import AnalyticsSetup from "../lib/AnalyticsSetup" 
+import AnalyticsSetup from "@/lib/AnalyticsSetup"
+import TikTokEventsTracker from "@/lib/TikTokEventsTracker"
+import TikTokPixel from "@/lib/TikTokPixel"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -35,7 +38,11 @@ export default function RootLayout({
     <html lang="es">
       <body className={`${inter.variable} ${montserrat.variable} font-sans`}>
         {}
-        <AnalyticsSetup /> 
+        <AnalyticsSetup />
+        <Suspense fallback={null}>
+          <TikTokPixel />
+        </Suspense>
+        <TikTokEventsTracker />
         <Header />
         {children}
         <Footer />
